@@ -1,0 +1,6 @@
+.envrc
+.idea/
+
+*-install.sh
+*.tgz
+*.tar.gz
