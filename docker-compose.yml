@@ -2,15 +2,14 @@ name: dev-setup
 
 services:
   ubuntu:
-    image: ubuntu:22.04
+    image: ubuntu:24.04
     tty: true
     volumes:
-      - .:/files/
-    command: bash -i
-    # command: 
-    #   - cd /files 
-    #   - /files/dev-setup.sh 
-    #   - bash -i
+      - ./:/files/
+#    command: bash -i
+    command: 
+      # - cd /files
+      - /files/dev-setup.sh
     environment:
       - IN_DOCKER=yes
       - GIT_USER=docker

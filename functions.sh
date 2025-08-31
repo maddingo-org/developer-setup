@@ -174,7 +174,7 @@ google_install () {
         mkdir -p ~/Downloads
         cd ~/Downloads
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        if sudo apt install ./google-chrome-stable_current_amd64.deb; then
+        if sudo apt install ./google-chrome-stable_current_amd64.deb -y; then
             echo "Google Chrome ${green}Installed successfully${reset}"
             status["google-chrome"]="Success"
         else

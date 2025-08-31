@@ -52,9 +52,8 @@ apt_install "docker-compose-v2"
 apt_install "docker.io"
 
 if [ -z "$IN_DOCKER" ] && [ -z "${UPDATE_CHECKSUM}" ]; then
-sudo groupadd -f docker
-sudo usermod -aG docker $USER
-#newgrp docker
+    sudo groupadd -f docker
+    sudo usermod -aG docker $USER
 fi
 
 # ssh client
