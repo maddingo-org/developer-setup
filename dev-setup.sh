@@ -99,11 +99,6 @@ snap_install "code --classic"
 # Slack
 snap_install "slack"
 
-#gpg NEEDED FOR INTUNE
-apt_install "gpg"
-
-install_intune
-
 # Azure Client
 install_remote_sh az-cli /usr/bin/az https://aka.ms/InstallAzureCLIDeb sudo
 
